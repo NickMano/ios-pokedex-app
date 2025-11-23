@@ -40,7 +40,7 @@ extension HomeCellIntent: HomeCellIntentProtocol {
                 let data = try await searchPokemonImageUseCase.execute(urlImage: pokemon.imageUrl)
                 
                 guard let uiImage = UIImage(data: data) else {
-                    throw PokemonServiceError.noImage
+                    throw NSError()
                 }
 
                 image = Image(uiImage: uiImage)

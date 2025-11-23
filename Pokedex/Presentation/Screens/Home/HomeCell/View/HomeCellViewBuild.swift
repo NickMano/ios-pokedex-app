@@ -7,6 +7,7 @@
 
 import SwiftUI
 import PokedexDomain
+import PokedexData
 
 extension HomeCellView {
     static func build(data: Pokemon) -> some View {
