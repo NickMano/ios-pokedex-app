@@ -12,13 +12,6 @@
 		1B98FCB92ED3C35B00BE032D /* PokedexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCB82ED3C35B00BE032D /* PokedexApp.swift */; };
 		1B98FCC02ED3C41100BE032D /* HomeCellModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCBF2ED3C41100BE032D /* HomeCellModule.swift */; };
 		1B98FCC22ED3C44400BE032D /* AboutViewBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCC12ED3C44400BE032D /* AboutViewBuild.swift */; };
-		1B98FCCF2ED3C56500BE032D /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCCC2ED3C56500BE032D /* RouterProtocol.swift */; };
-		1B98FCD02ED3C56500BE032D /* RouterNavigationStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCC82ED3C56500BE032D /* RouterNavigationStackModifier.swift */; };
-		1B98FCD12ED3C56500BE032D /* RouterAlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCC62ED3C56500BE032D /* RouterAlertModifier.swift */; };
-		1B98FCD22ED3C56500BE032D /* RouterSheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCCA2ED3C56500BE032D /* RouterSheetModifier.swift */; };
-		1B98FCD32ED3C56500BE032D /* RouterScreenProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCCD2ED3C56500BE032D /* RouterScreenProtocol.swift */; };
-		1B98FCD42ED3C56500BE032D /* RouterNavigationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCC92ED3C56500BE032D /* RouterNavigationViewModifier.swift */; };
-		1B98FCD52ED3C56500BE032D /* RouterCloseModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCC72ED3C56500BE032D /* RouterCloseModifier.swift */; };
 		1B98FCD82ED3C86400BE032D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCD62ED3C86400BE032D /* HomeViewModel.swift */; };
 		1B98FCDB2ED3C89600BE032D /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCD92ED3C89600BE032D /* HomeModule.swift */; };
 		1B98FCDC2ED3C89600BE032D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCDA2ED3C89600BE032D /* HomeView.swift */; };
@@ -65,13 +58,6 @@
 		1B98FCB82ED3C35B00BE032D /* PokedexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexApp.swift; sourceTree = "<group>"; };
 		1B98FCBF2ED3C41100BE032D /* HomeCellModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellModule.swift; sourceTree = "<group>"; };
 		1B98FCC12ED3C44400BE032D /* AboutViewBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewBuild.swift; sourceTree = "<group>"; };
-		1B98FCC62ED3C56500BE032D /* RouterAlertModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterAlertModifier.swift; sourceTree = "<group>"; };
-		1B98FCC72ED3C56500BE032D /* RouterCloseModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterCloseModifier.swift; sourceTree = "<group>"; };
-		1B98FCC82ED3C56500BE032D /* RouterNavigationStackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterNavigationStackModifier.swift; sourceTree = "<group>"; };
-		1B98FCC92ED3C56500BE032D /* RouterNavigationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterNavigationViewModifier.swift; sourceTree = "<group>"; };
-		1B98FCCA2ED3C56500BE032D /* RouterSheetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterSheetModifier.swift; sourceTree = "<group>"; };
-		1B98FCCC2ED3C56500BE032D /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
-		1B98FCCD2ED3C56500BE032D /* RouterScreenProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterScreenProtocol.swift; sourceTree = "<group>"; };
 		1B98FCD62ED3C86400BE032D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		1B98FCD92ED3C89600BE032D /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
 		1B98FCDA2ED3C89600BE032D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -129,28 +115,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B98FCCB2ED3C56500BE032D /* Modifier */ = {
-			isa = PBXGroup;
-			children = (
-				1B98FCC62ED3C56500BE032D /* RouterAlertModifier.swift */,
-				1B98FCC72ED3C56500BE032D /* RouterCloseModifier.swift */,
-				1B98FCC82ED3C56500BE032D /* RouterNavigationStackModifier.swift */,
-				1B98FCC92ED3C56500BE032D /* RouterNavigationViewModifier.swift */,
-				1B98FCCA2ED3C56500BE032D /* RouterSheetModifier.swift */,
-			);
-			path = Modifier;
-			sourceTree = "<group>";
-		};
-		1B98FCCE2ED3C56500BE032D /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				1B98FCCB2ED3C56500BE032D /* Modifier */,
-				1B98FCCC2ED3C56500BE032D /* RouterProtocol.swift */,
-				1B98FCCD2ED3C56500BE032D /* RouterScreenProtocol.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
 		1B98FCD72ED3C86400BE032D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,7 +178,6 @@
 				D08F42712989B97D008EC1B2 /* MVIContainer.swift */,
 				D09E4AF829076BC2002481C8 /* PokemonType.swift */,
 				D09CA2DE28D8B38B002FC53A /* Extensions */,
-				1B98FCCE2ED3C56500BE032D /* Router */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -539,14 +502,7 @@
 				D08F42722989B97D008EC1B2 /* MVIContainer.swift in Sources */,
 				1B98FCB92ED3C35B00BE032D /* PokedexApp.swift in Sources */,
 				D08C8DBA298C78CA004DEA8E /* AboutIntentProtocol.swift in Sources */,
-				1B98FCCF2ED3C56500BE032D /* RouterProtocol.swift in Sources */,
-				1B98FCD02ED3C56500BE032D /* RouterNavigationStackModifier.swift in Sources */,
 				1BB959062ED4CD4E00FA4EB3 /* HomeCellViewModel.swift in Sources */,
-				1B98FCD12ED3C56500BE032D /* RouterAlertModifier.swift in Sources */,
-				1B98FCD22ED3C56500BE032D /* RouterSheetModifier.swift in Sources */,
-				1B98FCD32ED3C56500BE032D /* RouterScreenProtocol.swift in Sources */,
-				1B98FCD42ED3C56500BE032D /* RouterNavigationViewModifier.swift in Sources */,
-				1B98FCD52ED3C56500BE032D /* RouterCloseModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
