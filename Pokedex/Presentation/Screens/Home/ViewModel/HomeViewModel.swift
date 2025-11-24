@@ -11,11 +11,12 @@ import PokedexDomain
 @MainActor
 final class HomeViewModel: ObservableObject {
     // MARK: - Published Properties (Estado)
-    @Published var contentState: ContentState = .loading
+    @Published private(set) var pokemons: [Pokemon] = []
+    @Published private(set) var isLoading = false
+    @Published private(set) var hasError = false
     
     // MARK: - Private properties
     private let searchPokemonUseCase: SearchPokemonsUseCase
-    private var pokemons: [Pokemon] = []
     
     // MARK: - Initializer
     init(searchPokemonUseCase: SearchPokemonsUseCase) {
@@ -35,22 +36,14 @@ final class HomeViewModel: ObservableObject {
 
     // MARK: - Private methods
     private func loadPokemons() async {
-        contentState = .loading
+        hasError = false
+        isLoading = true
+        defer { isLoading = false }
         
         do {
             pokemons = try await searchPokemonUseCase.execute()
-            contentState = .fetched(pokemons)
         } catch {
-            contentState = .error
+            hasError = true
         }
-    }
-}
-
-// MARK: - Content State
-extension HomeViewModel {
-    enum ContentState {
-        case loading
-        case fetched([Pokemon])
-        case error
     }
 }

@@ -40,16 +40,14 @@ private extension HomeView {
                     Text("Search for Pokémon by name or using the National Pokédex number")
                         .foregroundColor(.textGrey)
                     
-                    switch viewModel.contentState {
-                    case .loading:
+                    if viewModel.isLoading {
                         ProgressView()
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-
-                    case .fetched(let pokemons):
-                        listPokemonsView(pokemons: pokemons)
-                    
-                    case .error:
+                            .frame(maxWidth: .infinity)
+                        Spacer()
+                    } else if viewModel.hasError {
                         ErrorView(retryAction: viewModel.retryLoading)
+                    } else {
+                        listPokemonsView
                     }
                 }
             }
@@ -57,9 +55,9 @@ private extension HomeView {
         }
     }
     
-    func listPokemonsView(pokemons: [Pokemon]) -> some View {
+    var listPokemonsView: some View {
         LazyVStack {
-            ForEach(pokemons, id: \.identifier) {
+            ForEach(viewModel.pokemons, id: \.identifier) {
                 HomeCellView.build(data: $0)
             }
         }
