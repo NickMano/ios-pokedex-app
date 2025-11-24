@@ -91,6 +91,6 @@ struct DetailView_Previews: PreviewProvider {
     static let bulbasaur: Pokemon = Bundle.main.decode(file: "Bulbasaur", extesion: "json")
     
     static var previews: some View {
-        DetailView.build(data: DetailTypes.Intent.ExternalData(pokemon: bulbasaur, image: .bulbasaur))
+        DetailModule.build(data: DetailTypes.Intent.ExternalData(pokemon: bulbasaur, image: .bulbasaur))
     }
 }

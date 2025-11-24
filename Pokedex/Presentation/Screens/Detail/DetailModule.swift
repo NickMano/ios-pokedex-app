@@ -1,5 +1,5 @@
 //
-//  DetailViewBuild.swift
+//  DetailModule.swift
 //  Pokedex
 //
 //  Created by nicolas.e.manograsso on 01/02/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension DetailView {
+enum DetailModule {
     static func build(data: DetailTypes.Intent.ExternalData) -> some View {
         let model = DetailModel()
         let intent = DetailIntent(model: model, externalData: data)

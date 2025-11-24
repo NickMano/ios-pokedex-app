@@ -15,7 +15,7 @@ struct HomeView: View {
         NavigationStack {
             content
                 .navigationDestination(for: PokemonDetailNavigationData.self) { data in
-                    DetailView.build(data: DetailTypes.Intent.ExternalData(pokemon: data.pokemon, image: data.image))
+                    DetailModule.build(data: DetailTypes.Intent.ExternalData(pokemon: data.pokemon, image: data.image))
                 }
         }
         .task { await viewModel.onAppear() }
