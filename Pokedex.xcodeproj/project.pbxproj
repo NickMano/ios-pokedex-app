@@ -10,9 +10,8 @@
 		1B6AE0952ED48B8100411513 /* PokedexData in Frameworks */ = {isa = PBXBuildFile; productRef = 1B6AE0942ED48B8100411513 /* PokedexData */; };
 		1B6AE0972ED48CC000411513 /* SwiftUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1B6AE0962ED48CC000411513 /* SwiftUtils */; };
 		1B98FCB92ED3C35B00BE032D /* PokedexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCB82ED3C35B00BE032D /* PokedexApp.swift */; };
-		1B98FCC02ED3C41100BE032D /* HomeCellViewBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCBF2ED3C41100BE032D /* HomeCellViewBuild.swift */; };
+		1B98FCC02ED3C41100BE032D /* HomeCellModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCBF2ED3C41100BE032D /* HomeCellModule.swift */; };
 		1B98FCC22ED3C44400BE032D /* AboutViewBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCC12ED3C44400BE032D /* AboutViewBuild.swift */; };
-		1B98FCC52ED3C4C300BE032D /* HomeCellRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCC32ED3C4C300BE032D /* HomeCellRouter.swift */; };
 		1B98FCCF2ED3C56500BE032D /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCCC2ED3C56500BE032D /* RouterProtocol.swift */; };
 		1B98FCD02ED3C56500BE032D /* RouterNavigationStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCC82ED3C56500BE032D /* RouterNavigationStackModifier.swift */; };
 		1B98FCD12ED3C56500BE032D /* RouterAlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCC62ED3C56500BE032D /* RouterAlertModifier.swift */; };
@@ -24,9 +23,11 @@
 		1B98FCDB2ED3C89600BE032D /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCD92ED3C89600BE032D /* HomeModule.swift */; };
 		1B98FCDC2ED3C89600BE032D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCDA2ED3C89600BE032D /* HomeView.swift */; };
 		1B98FCE12ED3CE6100BE032D /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FCE02ED3CE6000BE032D /* ErrorView.swift */; };
+		1BB959062ED4CD4E00FA4EB3 /* HomeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB959042ED4CD4E00FA4EB3 /* HomeCellViewModel.swift */; };
+		1BB959082ED4D9CC00FA4EB3 /* HomeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB959072ED4D9CC00FA4EB3 /* HomeCellView.swift */; };
+		1BB9590A2ED4E8D700FA4EB3 /* PokemonDetailNavigationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB959092ED4E8D700FA4EB3 /* PokemonDetailNavigationData.swift */; };
 		D00B95C228CFF97800AFE79E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00B95C128CFF97800AFE79E /* Assets.xcassets */; };
 		D00B95C528CFF97800AFE79E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D00B95C328CFF97800AFE79E /* LaunchScreen.storyboard */; };
-		D0259D0C29491A360090C8D9 /* HomeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0259D0B29491A360090C8D9 /* HomeCellView.swift */; };
 		D028656E2906D9AE003CA780 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D028656D2906D9AE003CA780 /* Images.swift */; };
 		D02865702906DAEA003CA780 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D028656F2906DAEA003CA780 /* Colors.swift */; };
 		D039537D29493DCF00969777 /* Nidoking.json in Resources */ = {isa = PBXBuildFile; fileRef = D039537C29493DCF00969777 /* Nidoking.json */; };
@@ -51,11 +52,6 @@
 		D08C8DB8298C78AA004DEA8E /* AboutIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08C8DB7298C78AA004DEA8E /* AboutIntent.swift */; };
 		D08C8DBA298C78CA004DEA8E /* AboutIntentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08C8DB9298C78CA004DEA8E /* AboutIntentProtocol.swift */; };
 		D08F42722989B97D008EC1B2 /* MVIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08F42712989B97D008EC1B2 /* MVIContainer.swift */; };
-		D08F42802989CF59008EC1B2 /* HomeCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08F427F2989CF59008EC1B2 /* HomeCellModel.swift */; };
-		D08F42822989CF89008EC1B2 /* HomeCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08F42812989CF89008EC1B2 /* HomeCellProtocol.swift */; };
-		D08F42842989D02F008EC1B2 /* HomeCellTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08F42832989D02F008EC1B2 /* HomeCellTypes.swift */; };
-		D08F42872989D31B008EC1B2 /* HomeCellIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08F42862989D31B008EC1B2 /* HomeCellIntent.swift */; };
-		D08F42892989D367008EC1B2 /* HomeCellIntentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08F42882989D367008EC1B2 /* HomeCellIntentProtocol.swift */; };
 		D09E4AF5290746C6002481C8 /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E4AF4290746C6002481C8 /* Gradients.swift */; };
 		D09E4AF929076BC2002481C8 /* PokemonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E4AF829076BC2002481C8 /* PokemonType.swift */; };
 		D09E4AFB2907729E002481C8 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E4AFA2907729E002481C8 /* Fonts.swift */; };
@@ -67,9 +63,8 @@
 
 /* Begin PBXFileReference section */
 		1B98FCB82ED3C35B00BE032D /* PokedexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexApp.swift; sourceTree = "<group>"; };
-		1B98FCBF2ED3C41100BE032D /* HomeCellViewBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellViewBuild.swift; sourceTree = "<group>"; };
+		1B98FCBF2ED3C41100BE032D /* HomeCellModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellModule.swift; sourceTree = "<group>"; };
 		1B98FCC12ED3C44400BE032D /* AboutViewBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewBuild.swift; sourceTree = "<group>"; };
-		1B98FCC32ED3C4C300BE032D /* HomeCellRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellRouter.swift; sourceTree = "<group>"; };
 		1B98FCC62ED3C56500BE032D /* RouterAlertModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterAlertModifier.swift; sourceTree = "<group>"; };
 		1B98FCC72ED3C56500BE032D /* RouterCloseModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterCloseModifier.swift; sourceTree = "<group>"; };
 		1B98FCC82ED3C56500BE032D /* RouterNavigationStackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterNavigationStackModifier.swift; sourceTree = "<group>"; };
@@ -81,11 +76,13 @@
 		1B98FCD92ED3C89600BE032D /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
 		1B98FCDA2ED3C89600BE032D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1B98FCE02ED3CE6000BE032D /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		1BB959042ED4CD4E00FA4EB3 /* HomeCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellViewModel.swift; sourceTree = "<group>"; };
+		1BB959072ED4D9CC00FA4EB3 /* HomeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellView.swift; sourceTree = "<group>"; };
+		1BB959092ED4E8D700FA4EB3 /* PokemonDetailNavigationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailNavigationData.swift; sourceTree = "<group>"; };
 		D00B95B528CFF97500AFE79E /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00B95C128CFF97800AFE79E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D00B95C428CFF97800AFE79E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D00B95C628CFF97800AFE79E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0259D0B29491A360090C8D9 /* HomeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellView.swift; sourceTree = "<group>"; };
 		D028656D2906D9AE003CA780 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		D028656F2906DAEA003CA780 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D039537C29493DCF00969777 /* Nidoking.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Nidoking.json; sourceTree = "<group>"; };
@@ -110,11 +107,6 @@
 		D08C8DB7298C78AA004DEA8E /* AboutIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutIntent.swift; sourceTree = "<group>"; };
 		D08C8DB9298C78CA004DEA8E /* AboutIntentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutIntentProtocol.swift; sourceTree = "<group>"; };
 		D08F42712989B97D008EC1B2 /* MVIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVIContainer.swift; sourceTree = "<group>"; };
-		D08F427F2989CF59008EC1B2 /* HomeCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellModel.swift; sourceTree = "<group>"; };
-		D08F42812989CF89008EC1B2 /* HomeCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellProtocol.swift; sourceTree = "<group>"; };
-		D08F42832989D02F008EC1B2 /* HomeCellTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellTypes.swift; sourceTree = "<group>"; };
-		D08F42862989D31B008EC1B2 /* HomeCellIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellIntent.swift; sourceTree = "<group>"; };
-		D08F42882989D367008EC1B2 /* HomeCellIntentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellIntentProtocol.swift; sourceTree = "<group>"; };
 		D09E4AF4290746C6002481C8 /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
 		D09E4AF829076BC2002481C8 /* PokemonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonType.swift; sourceTree = "<group>"; };
 		D09E4AFA2907729E002481C8 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -137,14 +129,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B98FCC42ED3C4C300BE032D /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				1B98FCC32ED3C4C300BE032D /* HomeCellRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
 		1B98FCCB2ED3C56500BE032D /* Modifier */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +166,14 @@
 				D08F427A2989CD9D008EC1B2 /* HomeCell */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		1BB959052ED4CD4E00FA4EB3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1BB959042ED4CD4E00FA4EB3 /* HomeCellViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		D00B95AC28CFF97400AFE79E = {
@@ -285,6 +277,7 @@
 				D08C8D9E298AE248004DEA8E /* Intent */,
 				D0AEA40B294BC4940057DA8F /* Components */,
 				D08C8DA6298AE4EA004DEA8E /* DetailTypes.swift */,
+				1BB959092ED4E8D700FA4EB3 /* PokemonDetailNavigationData.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -355,11 +348,9 @@
 		D08F427A2989CD9D008EC1B2 /* HomeCell */ = {
 			isa = PBXGroup;
 			children = (
-				D08F42832989D02F008EC1B2 /* HomeCellTypes.swift */,
-				D08F42852989D2FC008EC1B2 /* Intent */,
-				D08F427E2989CF49008EC1B2 /* Model */,
-				1B98FCC42ED3C4C300BE032D /* Router */,
+				1B98FCBF2ED3C41100BE032D /* HomeCellModule.swift */,
 				D08F427B2989CE10008EC1B2 /* View */,
+				1BB959052ED4CD4E00FA4EB3 /* ViewModel */,
 			);
 			path = HomeCell;
 			sourceTree = "<group>";
@@ -367,28 +358,9 @@
 		D08F427B2989CE10008EC1B2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D0259D0B29491A360090C8D9 /* HomeCellView.swift */,
-				1B98FCBF2ED3C41100BE032D /* HomeCellViewBuild.swift */,
+				1BB959072ED4D9CC00FA4EB3 /* HomeCellView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		D08F427E2989CF49008EC1B2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D08F427F2989CF59008EC1B2 /* HomeCellModel.swift */,
-				D08F42812989CF89008EC1B2 /* HomeCellProtocol.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D08F42852989D2FC008EC1B2 /* Intent */ = {
-			isa = PBXGroup;
-			children = (
-				D08F42862989D31B008EC1B2 /* HomeCellIntent.swift */,
-				D08F42882989D367008EC1B2 /* HomeCellIntentProtocol.swift */,
-			);
-			path = Intent;
 			sourceTree = "<group>";
 		};
 		D09CA2DC28D8B36C002FC53A /* Commons */ = {
@@ -533,20 +505,18 @@
 				D09E4AF5290746C6002481C8 /* Gradients.swift in Sources */,
 				D08C8DB3298C7694004DEA8E /* AboutModel.swift in Sources */,
 				D0806EDF294A3EEA000920A1 /* PokemonInfo.swift in Sources */,
+				1BB9590A2ED4E8D700FA4EB3 /* PokemonDetailNavigationData.swift in Sources */,
 				1B98FCE12ED3CE6100BE032D /* ErrorView.swift in Sources */,
-				D08F42802989CF59008EC1B2 /* HomeCellModel.swift in Sources */,
 				D039537F29493ECF00969777 /* PokeballGradient.swift in Sources */,
-				D08F42872989D31B008EC1B2 /* HomeCellIntent.swift in Sources */,
 				D0D8641329A411F400FB8723 /* GenderStackView.swift in Sources */,
-				D08F42822989CF89008EC1B2 /* HomeCellProtocol.swift in Sources */,
 				D08C8DA7298AE4EA004DEA8E /* DetailTypes.swift in Sources */,
+				1BB959082ED4D9CC00FA4EB3 /* HomeCellView.swift in Sources */,
 				1B98FCDB2ED3C89600BE032D /* HomeModule.swift in Sources */,
 				1B98FCDC2ED3C89600BE032D /* HomeView.swift in Sources */,
 				D08C8DA1298AE398004DEA8E /* DetailViewBuild.swift in Sources */,
 				D09E4AFB2907729E002481C8 /* Fonts.swift in Sources */,
 				D0AEA408294BC3A90057DA8F /* DataStackView.swift in Sources */,
 				D05244C629940108001A96B8 /* WeakStackView.swift in Sources */,
-				D0259D0C29491A360090C8D9 /* HomeCellView.swift in Sources */,
 				D08C8DAB298AEB50004DEA8E /* DetailIntent.swift in Sources */,
 				D08C8DB1298C7689004DEA8E /* AboutModelProtocol.swift in Sources */,
 				D0AEA40A294BC48F0057DA8F /* AbilityStackView.swift in Sources */,
@@ -558,11 +528,10 @@
 				D028656E2906D9AE003CA780 /* Images.swift in Sources */,
 				D08C8DB8298C78AA004DEA8E /* AboutIntent.swift in Sources */,
 				1B98FCC22ED3C44400BE032D /* AboutViewBuild.swift in Sources */,
-				1B98FCC02ED3C41100BE032D /* HomeCellViewBuild.swift in Sources */,
+				1B98FCC02ED3C41100BE032D /* HomeCellModule.swift in Sources */,
 				D05244C82994067A001A96B8 /* TypeImage.swift in Sources */,
 				D0AEA406294BB2AC0057DA8F /* AboutView.swift in Sources */,
 				D02865702906DAEA003CA780 /* Colors.swift in Sources */,
-				1B98FCC52ED3C4C300BE032D /* HomeCellRouter.swift in Sources */,
 				1B98FCD82ED3C86400BE032D /* HomeViewModel.swift in Sources */,
 				D08C8DB5298C7818004DEA8E /* AboutTypes.swift in Sources */,
 				D039538429494FCF00969777 /* PokemonTypeView.swift in Sources */,
@@ -570,10 +539,9 @@
 				D08F42722989B97D008EC1B2 /* MVIContainer.swift in Sources */,
 				1B98FCB92ED3C35B00BE032D /* PokedexApp.swift in Sources */,
 				D08C8DBA298C78CA004DEA8E /* AboutIntentProtocol.swift in Sources */,
-				D08F42842989D02F008EC1B2 /* HomeCellTypes.swift in Sources */,
-				D08F42892989D367008EC1B2 /* HomeCellIntentProtocol.swift in Sources */,
 				1B98FCCF2ED3C56500BE032D /* RouterProtocol.swift in Sources */,
 				1B98FCD02ED3C56500BE032D /* RouterNavigationStackModifier.swift in Sources */,
+				1BB959062ED4CD4E00FA4EB3 /* HomeCellViewModel.swift in Sources */,
 				1B98FCD12ED3C56500BE032D /* RouterAlertModifier.swift in Sources */,
 				1B98FCD22ED3C56500BE032D /* RouterSheetModifier.swift in Sources */,
 				1B98FCD32ED3C56500BE032D /* RouterScreenProtocol.swift in Sources */,

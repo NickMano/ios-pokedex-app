@@ -45,7 +45,7 @@ final class HomeViewModel: ObservableObject {
     }
     
     func loadMoreIfNeeded(currentPokemon pokemon: Pokemon) {
-        guard let index = pokemons.firstIndex(where: { $0.identifier == pokemon.identifier }) else {
+        guard let index = pokemons.firstIndex(where: { $0.id == pokemon.id }) else {
             return
         }
         
@@ -87,7 +87,7 @@ final class HomeViewModel: ObservableObject {
             let newPokemons = try await fetchPokemons(offset: currentOffset, limit: pageSize)
             
             let uniqueNewPokemons = newPokemons.filter { newPokemon in
-                !pokemons.contains { $0.identifier == newPokemon.identifier }
+                !pokemons.contains { $0.id == newPokemon.id }
             }
             
             pokemons.append(contentsOf: uniqueNewPokemons)

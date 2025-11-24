@@ -46,7 +46,7 @@ private extension AboutIntent {
         
         Task {
             do {
-                let pokemonId = pokemon.identifier
+                let pokemonId = pokemon.id
                 let species = try await repository.fetchSpecies(pokemonId)
                 fetchEggGroups(from: species)
                 

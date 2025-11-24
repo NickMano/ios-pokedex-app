@@ -12,8 +12,11 @@ struct HomeView: View {
     @StateObject var viewModel: HomeViewModel
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             content
+                .navigationDestination(for: PokemonDetailNavigationData.self) { data in
+                    DetailView.build(data: DetailTypes.Intent.ExternalData(pokemon: data.pokemon, image: data.image))
+                }
         }
         .task { await viewModel.onAppear() }
         .preferredColorScheme(.light)
@@ -57,11 +60,11 @@ private extension HomeView {
     
     var listPokemonsView: some View {
         LazyVStack {
-            ForEach(viewModel.pokemons, id: \.identifier) { pokemon in
-                HomeCellView.build(data: pokemon)
-                    .onAppear {
-                        viewModel.loadMoreIfNeeded(currentPokemon: pokemon)
-                    }
+            ForEach(viewModel.pokemons) { pokemon in
+                HomeCellModule.build(data: pokemon)
+                .onAppear {
+                    viewModel.loadMoreIfNeeded(currentPokemon: pokemon)
+                }
             }
             
             if viewModel.isLoadingMore {
