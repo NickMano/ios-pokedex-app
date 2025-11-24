@@ -7,58 +7,56 @@ excluded:
   - SwiftLint/Common/3rdPartyLib
 
 opt_in_rules:
-    - anyobject_protocol
-    - closure_end_indentation
-    - closure_spacing
-    - contains_over_filter_count
-    - contains_over_filter_is_empty
-    - contains_over_first_not_nil
-    - contains_over_range_nil_comparison
-    - empty_collection_literal
-    - empty_count
-    - empty_string
-    - first_where
-    - flatmap_over_map_reduce
-    - force_unwrapping
-    - implicitly_unwrapped_optional
-    - last_where
-    - legacy_multiple
-    - operator_usage_whitespace
-    - prefer_zero_over_explicit_init
-    - reduce_into
-    - redundant_nil_coalescing
-    - redundant_type_annotation
-    - sorted_first_last
-    - toggle_bool
-    - trailing_closure
-    - unneeded_parentheses_in_closure_argument
-    - unowned_variable_capture
-    - unused_import
-    - vertical_whitespace_between_cases
-    - vertical_whitespace_closing_braces
-    - vertical_whitespace_opening_braces
+  - closure_end_indentation
+  - closure_spacing
+  - contains_over_filter_count
+  - contains_over_filter_is_empty
+  - contains_over_first_not_nil
+  - contains_over_range_nil_comparison
+  - empty_collection_literal
+  - empty_count
+  - empty_string
+  - first_where
+  - flatmap_over_map_reduce
+  - force_unwrapping
+  - implicitly_unwrapped_optional
+  - last_where
+  - legacy_multiple
+  - operator_usage_whitespace
+  - prefer_zero_over_explicit_init
+  - reduce_into
+  - redundant_nil_coalescing
+  - redundant_type_annotation
+  - sorted_first_last
+  - toggle_bool
+  - trailing_closure
+  - unneeded_parentheses_in_closure_argument
+  - unowned_variable_capture
+  - vertical_whitespace_between_cases
+  - vertical_whitespace_closing_braces
+  - vertical_whitespace_opening_braces
 
 # Rules
 custom_rules:
-    multiline_commented_code:
-        regex: '^\s*[a-z]'
-        match_kinds: comment
-        message: "Comment starting with lowercase letter - did you forget to delete old code?"
-        severity: warning
+  multiline_commented_code:
+    regex: '^\s*[a-z]'
+    match_kinds: comment
+    message: "Comment starting with lowercase letter - did you forget to delete old code?"
+    severity: warning
 
-    commented_code:
-        regex: '(?<!:|\/)\/\/\h*[a-z.](?!wiftlint)'
-        message: "Comment starting with lowercase letter - did you forget to delete old code?"
-        severity: warning
-        
-    already_true:
-        regex: "== true"
-        message: "Don't compare to true, just use the bool value."
-        severity: warning
-        
-    already_bool:
-        regex: "== false"
-        message: "Don't compare to false, just use !value."
-        severity: warning
+  commented_code:
+    regex: '(?<!:|\/)\/\/\h*[a-z.](?!wiftlint)'
+    message: "Comment starting with lowercase letter - did you forget to delete old code?"
+    severity: warning
+
+  already_true:
+    regex: "== true"
+    message: "Don't compare to true, just use the bool value."
+    severity: warning
+
+  already_bool:
+    regex: "== false"
+    message: "Don't compare to false, just use !value."
+    severity: warning
 
 reporter: "xcode"

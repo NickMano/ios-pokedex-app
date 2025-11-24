@@ -124,7 +124,6 @@ private extension AboutView {
             default:
                 EmptyView()
             }
-            
         }
     }
 }

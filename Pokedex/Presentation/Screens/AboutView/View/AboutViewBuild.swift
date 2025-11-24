@@ -15,7 +15,12 @@ extension AboutView {
         let pokemonRepository = DefaultPokemonRepository()
         let typeRepository = DefaultTypeRepository()
         let weaknessesUseCase = DefaultGetWeaknessesUseCase(typeRepository: typeRepository)
-        let intent = AboutIntent(model: model, externalData: data, weaknessesUseCase: weaknessesUseCase, repository: pokemonRepository)
+        let intent = AboutIntent(
+            model: model,
+            externalData: data,
+            weaknessesUseCase: weaknessesUseCase,
+            repository: pokemonRepository
+        )
         let container = MVIContainer(intent: intent as AboutIntentProtocol,
                                      model: model as AboutModelStateProtocol,
                                      modelChangePublisher: model.objectWillChange)

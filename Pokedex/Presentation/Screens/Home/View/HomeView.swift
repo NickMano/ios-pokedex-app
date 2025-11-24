@@ -46,7 +46,7 @@ private extension HomeView {
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
 
                     case .fetched(let pokemons):
-                        ListPokemonsView(pokemons: pokemons)
+                        listPokemonsView(pokemons: pokemons)
                     
                     case .error:
                         ErrorView(retryAction: viewModel.retryLoading)
@@ -54,6 +54,14 @@ private extension HomeView {
                 }
             }
             .padding()
+        }
+    }
+    
+    func listPokemonsView(pokemons: [Pokemon]) -> some View {
+        LazyVStack {
+            ForEach(pokemons, id: \.identifier) {
+                HomeCellView.build(data: $0)
+            }
         }
     }
 }
